@@ -46,6 +46,8 @@ public extension TabmanBar {
         public struct Text {
             /// The font to use for text labels in the bar.
             public var font: UIFont?
+            /// The weight of font to use for selected item text labels in the bar.
+            public var selectedFontWeight: CGFloat?
         }
         
         /// Layout configuration
@@ -120,6 +122,7 @@ public extension TabmanBar {
             
             // text
             self.text.font = UIFont.systemFont(ofSize: 16.0)
+            self.text.selectedFontWeight = UIFontWeightMedium
             
             // layout
             self.layout.height = .auto
